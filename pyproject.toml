@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-depth-estimation"
+version = "0.1.0"
+description = "Monocular depth estimation with a DenseNet-169 encoder for NYU Depth V2 and KITTI experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.23.0",
+    "pillow>=9.0.0",
+    "scipy>=1.9.0",
+    "opencv-python>=4.7.0",
+    "scikit-learn>=1.2.0",
+    "matplotlib>=3.6.0",
+    "seaborn>=0.12.0",
+    "tensorboard>=2.12.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["ImageDepthEstimation/src"]

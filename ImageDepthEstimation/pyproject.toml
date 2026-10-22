@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-depth-estimation"
+version = "0.1.0"
+description = "Monocular depth estimation with a DenseNet-169 encoder for NYU Depth V2 and KITTI experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
